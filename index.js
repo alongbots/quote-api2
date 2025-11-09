@@ -8,7 +8,7 @@ const app = express();
 app.use(bodyParser.json({ limit: "10mb" }));
 
 // 🟢 Create instance of quote generator
-const quote = new QuoteGenerate("6230570474:AAEc3BHqR-MIENRVt3EHqKTEFnFd54ROHhA");
+const quote = new QuoteGenerate(process.env.TOKEN);
 
 const BUBBLE_COLOR = "#303030"; // solid chat bubble
 const BACKGROUND_IMAGE =
